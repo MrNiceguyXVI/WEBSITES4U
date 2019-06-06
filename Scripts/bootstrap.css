@@ -1,6 +1,20 @@
 /* Own Code */
 
+#bannertemplate{
+  background: url(img/Tech\ Blur.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border-radius: 0;
+  margin: 0 auto;
+}
 
+#bannername{
+font-family: 'Prompt', sans-serif;
+color: white;
+text-align: center;
+}
 
 /* Bootstrap */
 
