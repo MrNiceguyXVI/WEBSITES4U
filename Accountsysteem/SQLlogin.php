@@ -1,5 +1,5 @@
 <?php
-
+$session;
 $Gebruikersnaam = $_POST['Username'];
 $Wachtwoord = $_POST['Password'];
 
@@ -24,6 +24,10 @@ else
 	if ($Gebruikersnaam == $Server_Gebruikersnaam_result && $Wachtwoord == $Server_Wachtwoord_result)
 	{
 		echo "<h2 align='center'>You are now logged in, you will be redirected in a few seconds</h2>";
+		echo "<script> 
+		var Gebruikersnaam = '$Gebruikersnaam';
+		sessionStorage.setItem('Username', Gebruikersnaam);
+		</script>";
 		echo ("<script type='text/javascript'>
 		setTimeout(redirect, 3000);
 		function redirect()
