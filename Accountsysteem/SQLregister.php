@@ -26,14 +26,14 @@ else{
 			setTimeout(redirectback, 3000);
 			function redirectback()
 			{
-				window.location.href = 'SQLtest.html';
+				window.location.href = 'Register_page.html';
 			}
 			</script>";
 		}
 		else
 		{
-			$sql = "INSERT INTO gebruikersgegevens (Gebruikersnaam, Wachtwoord)
-			VALUES ('$Gebruikersnaam', '$Wachtwoord')";
+			$sql = "INSERT INTO gebruikersgegevens (Gebruikersnaam, Wachtwoord, Admin)
+			VALUES ('$Gebruikersnaam', '$Wachtwoord', 'No')";
 				mysqli_query($conn, $sql);
 				echo "<h2 align='center'>Your account has now been created</h2>";
 				echo "<script>
