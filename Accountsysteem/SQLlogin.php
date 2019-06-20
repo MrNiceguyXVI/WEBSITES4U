@@ -32,7 +32,7 @@ else
 		setTimeout(redirect, 3000);
 		function redirect()
 		{
-			window.location.href = 'Login_page.html';
+			window.location.href = 'C:\xampp\htdocs\PIU\Login_page.html';
 		}
 		</script>");
 	}
