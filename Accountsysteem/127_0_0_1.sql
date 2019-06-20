@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Gegenereerd op: 26 mei 2019 om 22:31
+-- Gegenereerd op: 18 jun 2019 om 16:10
 -- Serverversie: 10.1.40-MariaDB
 -- PHP-versie: 7.3.5
 
@@ -40,7 +40,7 @@ CREATE TABLE `gebruikersgegevens` (
 --
 
 INSERT INTO `gebruikersgegevens` (`Gebruikersnaam`, `Wachtwoord`) VALUES
-('Jack', '9632');
+('ach', '07');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
