@@ -56,7 +56,7 @@
     <br />
     <div align="center">
         <img src="Scripts\img\Websites4U.webp" width="300px" height="300px" />
-        <form name="Login" method="POST" action="SQLlogin.php">
+        <form name="Register" method="POST" action="Accountsysteem\SQLregister.php">
             <div class="form-group">
                 <input type="Username" class="form-control" name="Username" aria-describedby="Username_input" placeholder="Enter username">
             </div>
@@ -66,14 +66,14 @@
                 <input type="password" class="form-control" name="Password" placeholder="Password">
             </div>
             <br />
-            <a href=""><button type="submit" class="btn btn-primary">Login</button></a><br />
+            <label><input type="checkbox" name="Agree">I agree to the EULA</label>
             <br />
-            <h3>Dont have an account yet?, you can create one here:</h3>
             <br />
+            <a href=""><button type="submit" class="btn btn-primary">Register</button></a><br />
         </form>
-        <a href="Register_page.html"><button class="btn btn-primary">Register</button></a>
     </div>
-    <br /><hr style="padding-bottom:23px; visibility: hidden;" />
+    <br />
+    <hr style="padding-bottom:94px; visibility:hidden;" />
     <!-- end of main body -->
     <!-- footer -->
     <footer class="bg-dark text-light">
@@ -90,10 +90,10 @@
     <!-- end of footer -->
 </body>
 <!-- Javascript -->
-    <script src="Scripts/jquery-3.3.1.slim.min.js"></script>
-    <script src="Scripts/popper.min.js"></script>
-    <script src="Scripts/bootstrap.js"></script>
-    <script>
+<script src="Scripts/jquery-3.3.1.slim.min.js"></script>
+<script src="Scripts/popper.min.js"></script>
+<script src="Scripts/bootstrap.js"></script>
+<script>
     Gebruikersnaam = sessionStorage.getItem("Username");
     if (Gebruikersnaam) {
         document.getElementById("User").innerHTML = Gebruikersnaam;
@@ -103,14 +103,9 @@
     }
 
     function Logout() {
-        if (Gebruikersnaam) {
-            sessionStorage.clear("Username");
-            window.location.href = 'Home.html';
-        }
-        else {
-            alert("No one to sign out");
-        }
+        sessionStorage.clear("Username");
+        location.reload();
     }
-    </script>
+</script>
 <!-- end of javascript -->
 </html>
