@@ -44,8 +44,9 @@
 
       <div class="containter bg-white">
         <div class="row">
-
-      <div class="box col-lg-5  col-md-5 col-sm-11 col-xs-12 mx-auto border bg-light mt-5 mb-5">
+ 
+          <!-- Prices box -->
+      <div class="box col-lg-5  col-md-5 col-sm-11 col-xs-11 mx-auto border bg-light mt-5 mb-5">
                     
         <h1 class="display-4 text-center">Reparaties</h1>
           <hr class="my-4">
@@ -64,8 +65,10 @@
                       <br/>
                       <p>Alle bovenstaande prijzen zijn inc. BTW</p>
         </div>
+          <!-- end of Prices box -->
 
-      <div class="box col-lg-5  col-md-5 col-sm-11 col-xs-12 mx-auto border bg-light mt-5 mb-5">
+        <!-- Estimated repair cost box -->
+      <div class="box col-lg-5  col-md-5 col-sm-11 col-xs-11 mx-auto border bg-light mt-5 mb-5">
 
           <h1 class="display-4 text-center">Geschatte tijd Reparatie/ Upgrade</h1>
           <hr class="my-4">
@@ -88,13 +91,19 @@
                         <br/>
                         <p>Aan deze bovenstaande uitspraken kunnen geen rechten worder ontleend.</p>
             </div>
-      </div>
-    </div>
+        <!-- end of Estimated repair cost box -->
 
+
+
+      </div>   <!-- End of row -->
+    </div>  <!-- End of 1st contianer -->
+
+
+          <!-- Box pictures -->
     <div class="containter bg-white">
       <div class="row">
 
-    <div class="box col-lg-5  col-md-5 col-sm-11 col-xs-12 mx-auto border bg-light mt-5 mb-5">
+    <div class="box col-lg-5  col-md-5 col-sm-11 col-xs-11 mx-auto border bg-light mt-5 mb-5">
          
       <div class="mt-5 mb-5">
         <img src="Scripts/img/Repair2.jpg" class="img-fluid" alt="Responsive image">
@@ -102,65 +111,46 @@
       <div class="mt-5 mb-5">
       <img src="Scripts/img/Repair.jpg" class="img-fluid" alt="Responsive image">
     </div>
-    
+          <!-- end of Box pictures -->
+
 
     </div>
 
-    <div class="box col-lg-5  col-md-5 col-sm-11 col-xs-12 mx-auto border bg-light mt-5 mb-5 text-center">
+    <div class="box col-lg-5  col-md-5 col-sm-11 col-xs-11 mx-auto border bg-light mt-5 mb-5 text-center">
 
         <h1 class="display-4 text-center">Contact opnemen</h1>
         <hr class="my-4">
           <h4>Een mail sturen</h4>
+                
+          <!-- Code for sending email -->
+
           <form action="mailto:reparatie@pc4u.nl" method="post" enctype="text/plain">
             Uw naam:<br>
-            <input type="text" name="Naam klant: "><br>
+            <input type="text" name="Naam klant: " placeholder="Uw naam"><br>
             Uw E-mailadres:<br>
-            <input type="text" name="E-mailadres klant: "><br>
+            <input type="text" name="E-mailadres klant: " placeholder="Uw Email"><br>
             Uw Bericht:<br>
-            <textarea name="Bericht: " rows="4" cols="80" width="90%">
-              Type hier uw bericht, druk hierna op verzenden. 
-              </textarea>    
+            <textarea class="form-control" style="min-width: 100%" name="Bericht: " rows="15" cols="80" width="90%" 
+                      placeholder="Uw Bericht: (gedetailleerde) beschrijving van uw probleem zodat wij een schatting kunnen maken."></textarea>    
             </br>        
-              <input type="submit" value="Verzenden">
+              <input type="submit" value="Verzend Email" class="btn btn-primary">
             </form>
+
+          </br></br>
+
+          <a target="_blank" href="https://wa.me/31618161858" class="btn btn-primary btn-lg active visible-xs visible-sm hidden-md hidden-lg" role="button" aria-pressed="true">Stuur een Whatsappje.</a></br>
+          <a target="_blank" href="tel:31618161858" class="mt-1 btn btn-primary btn-lg active visible-xs visible-sm hidden-md hidden-lg" role="button" aria-pressed="true">Bel ons.</a>
+          
+        </br></br>
+
+
+            <!-- End of Code for sending email -->
+
           </div>
-    </div>
-  </div>
+        </div>   <!-- End of row -->
+      </div>  <!-- End of 2nd contianer -->
 
-        
 
-<!--
-      <div class="containter">
-        <div class="row">
-
-          <div class="jumbotron">
-          <div class="col-lg-6  col-md-6 col-sm-12 col-xs-12">
-                <h2>Reparaties</h2>
-                <div class="col-lg-4  col-md-4 col-sm-11 col-xs-12"></div>
-                    <h4>Hoe werkt het?</h4>
-                    <p>Als u een probleem heeft met uw computer kan dat u veel tijd kosten voordat u weer aan het werk kunt. zeker als u van uw PC of laptop afhangt voor uw werk is de 
-                        optimale werking van up apparaat van groot belang. Wij proberen zo snel mogelijk uw apparaat te repareren, echter kunnen wij geen maximale tijd garanderen aangezien wij in 
-                        sommige gevallen ook onderdelen moeten bestellen waar wij op moeten wachten.
-                    </p>
-                </div>  
-
-                
-                <div class="col-lg-4  col-md-4 col-sm-11 col-xs-12">
-                      <h4>Prijzen</h4>
-                      <p>Diagnosekosten < 30 minuten: &euro;25</p>
-                      <p>Diagnosekosten > 30 minuten: &euro;50</p>
-                      <br/>
-                      <p>Prijs per uur: &euro;12,50.-</p>
-                      <p>
-                      </p>
-                  </div>
-
-                </div>
-
-            </div>
-        </div>
-      </div>
--->
       <br/>
       <!-- end of main body -->
       <!-- footer -->
@@ -175,7 +165,7 @@
       <!-- end of footer -->
 
 <style>
-card border-info mb-3 col-lg-6  col-md-6 col-sm-12 col-xs-12
+card border-info mb-3 col-lg-6  col-md-6 col-sm-12 col-xs-11
 </style>
 
       <!-- Javascript -->
