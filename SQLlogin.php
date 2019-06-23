@@ -32,7 +32,7 @@ else
 		setTimeout(redirect, 3000);
 		function redirect()
 		{
-			window.location.href = '\Login_page.html';
+			window.location.href = 'Home.html';
 		}
 		</script>");
 	}

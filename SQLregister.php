@@ -26,7 +26,7 @@ else{
 			setTimeout(redirectback, 3000);
 			function redirectback()
 			{
-				window.location.href = '/Register_page.html';
+				window.location.href = 'Register_page.html';
 			}
 			</script>";
 		}
@@ -40,7 +40,7 @@ else{
 					setTimeout(redirect, 3000);
 					function redirect()
 					{
-						window.location.href = '/Login_page.html';
+						window.location.href = 'Login_page.html';
 					}
 				</script>";
 		}

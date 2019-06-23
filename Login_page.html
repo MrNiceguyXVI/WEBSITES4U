@@ -31,12 +31,24 @@
                   <a class="nav-link" href="PC4U_producten.html">Computers</a>
                 </li>
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">Reparatie<span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="reparatiepagina.html">Reparatie</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="Contact_page.html">Contact</a>
                 </li>
               </ul>
+            </div>
+            <div class="dropdown show">
+              <b style="color:white">Ingelogd als:&nbsp</b>
+              <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i id="User"></i>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right">
+                  <a class="dropdown-item" href="#">Accountinfo</a>
+                  <a class="dropdown-item" href="#">Shopping cart</a>
+                  <div class="dropdown-divider"></div>
+                  <a style="cursor: pointer;" class="dropdown-item" id="Logtext" onclick="Log()"></a>
+              </div>
             </div>
           </nav>
     <!-- end of navigation bar -->
@@ -44,7 +56,7 @@
     <br />
     <div align="center">
         <img src="Scripts\img\Websites4U.webp" width="300px" height="300px" />
-        <form name="Login" method="POST" action="Accountsysteem\SQLlogin.php">
+        <form name="Login" method="POST" action="SQLlogin.php">
             <div class="form-group">
                 <input type="Username" class="form-control" name="Username" aria-describedby="Username_input" placeholder="Enter username">
             </div>
@@ -81,26 +93,6 @@
     <script src="Scripts/jquery-3.3.1.slim.min.js"></script>
     <script src="Scripts/popper.min.js"></script>
     <script src="Scripts/bootstrap.js"></script>
-    <script>
-    Gebruikersnaam = sessionStorage.getItem("Username");
-    if (Gebruikersnaam) {
-        document.getElementById("User").innerHTML = Gebruikersnaam;
-    }
-    else {
-        document.getElementById("User").innerHTML = "No one";
-    }
-	
-	
-	
-    function Logout() {
-        if (Gebruikersnaam) {
-            sessionStorage.clear("Username");
-            window.location.href = 'Home.html';
-        }
-        else {
-            alert("No one to sign out");
-        }
-    }
-    </script>
+    <script src="Scripts/Inlogsysteem.js"></script>
 <!-- end of javascript -->
 </html>
