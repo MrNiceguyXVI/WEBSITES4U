@@ -9,7 +9,7 @@ Eerst voer je dit voor </nav> in:
 	</a>
 	<div class="dropdown-menu dropdown-menu-right">
 		<a class="dropdown-item" href="#">Accountinfo</a>
-		<a class="dropdown-item" href="#">Shopping cart</a>
+		<!--<a class="dropdown-item" href="#">Shopping cart</a>--> <!--Niet meer nodig aangezien de shopping cart alleen op de producten pagina werkt-->
 			<div class="dropdown-divider"></div>
 		<a style="cursor: pointer;" class="dropdown-item" id="Logtext" onclick="Log()"></a>
 	</div>
