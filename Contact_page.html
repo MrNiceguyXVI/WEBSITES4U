@@ -3,15 +3,16 @@
 	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>PC4U</title>
         
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="Scripts/bootstrap.css" type="text/css">
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="Scripts/bootstrap.css" type="text/css">
 		<link rel="stylesheet" href="Scripts/Custom.css" type="text/css">
-        <link rel="icon" href="Scripts/img/Websites4U.png">
+		<link rel="icon" href="Scripts/img/Websites4U.png">
     </head>
     <!-- end of header -->
     <body>  
     <!-- Navigation bar -->
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <a class="navbar-brand" href="Contact_page.html">
 			<img src="Scripts/img/Websites4U.webp" class="navlogo" width="50" height="50">          
         </a>
@@ -22,98 +23,100 @@
 			<span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-			<ul class="navbar-nav">
-            <li class="nav-item active">
+		<ul class="navbar-nav">
+            <li class="nav-item">
 				<a class="nav-link" href="Home.html">Home<span class="sr-only"></span></a>
             </li>
             <li class="nav-item">
 				<a class="nav-link" href="PC4U_producten.html">Computers</a>
             </li>
             <li class="nav-item">
-				<a class="nav-link" href="reparatiepagina.html">Reperatie</a>
+				<a class="nav-link" href="reparatiepagina.html">Reparatie</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
 				<a class="nav-link" href="#">Contact</a>
             </li>
-			</ul>
+		</ul>
 		</div>
-		<div class="dropdown">
-            <b style="color:white">Logged in as:&nbsp;</b>
-            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		<div class="dropdown show">
+            <b style="color:white">Ingelogd als:&nbsp</b>
+            <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i id="User"></i>
             </a>
             <div class="dropdown-menu dropdown-menu-right">
-                <a class="dropdown-item" href="#">Accountinfo</a>
+				<a class="dropdown-item" href="#">Accountinfo</a>
                 <a class="dropdown-item" href="#">Shopping cart</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#" onclick="Log()"><i id="Logtext"></i></a>
+                <a style="cursor: pointer;" class="dropdown-item" id="Logtext" onclick="Log()"></a>
             </div>
         </div>
-		</nav>
-		<!-- end of navigation bar -->
+	</nav>
+	<!-- end of navigation bar -->
 		<!-- main body -->
-		<br>
-		<div style="width: 70%; position: absolute; left: 7%">
+		<br/>
+		<div style="width: 70%; position: absolute; left: 13%">
 			<div style="width:50%; text-align:center">
-				Fields with an <i id="">*</i> are manditory<br/>
+			<h1>Heeft u nog vragen? , die kunnen hier worden gesteld.</h1>
+				Velden met <i id="">*</i> zijn benodigd<br/>
 			</div>
 			<div style="width:25%; position: relative; float:left;">
-				<input type="email" class="form-control" name="email" aria-describedby="email_input" placeholder="Enter email">
+				<input type="email" class="form-control" name="email" aria-describedby="email_input" placeholder="Enter email*">
 			</div>
 			<div style="width:25%; position: relative; float:left;">
-				<input type="text" class="form-control" name="Subject" aria-describedby="Subject_input" placeholder="Enter subject">
+				<input type="text" class="form-control" name="Subject" aria-describedby="Subject_input" placeholder="Enter subject*">
 			</div>
 			<div style="clear:left; position: relative; top: 10px;">
 				<div style="width:25%; float:left;">
 					<input type="text" class="form-control" name="Name" aria-describedby="Name_input" placeholder="Enter Name">
 				</div>
 				<div style="width:25%; float:left;">
-					<input type="email" class="form-control" name="email" aria-describedby="email_input" placeholder="Enter email">
+					<input type="text" class="form-control" name="Adress" aria-describedby="Adress_input" placeholder="Enter Adress">
 				</div>
 			</div>
 			<div style="clear:left; position: relative; top: 20px;">
 				<div style="width:50%; float:left;">
-					<input style="height: 400px;" type="Text" class="form-control" name="Text" aria-describedby="Text_input" placeholder="Explain your problem here">
+					<textarea class="form-control" style="min-width: 100%" name="Text: " rows="15" cols="80" width="90%" 
+                      placeholder="Beschrijving van uw vraag"></textarea> 
 				</div>
 			</div>
+			<div style="clear:left; left: 21%; position: relative; top: 30px;">
+				<button type="submit" class="btn btn-primary">Stel uw vraag</button>
+			</div>
+			
 		</div>
-		<hr style="padding-bottom:692px; visibility:hidden;" />
+		<div style="position:absolute; height: 585px; left:52%; top: 12%;">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2900.9700381628486!2d4.683562965966605!3d52.30846605035255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5e7b3ae6a7cbb%3A0xda10ab140627e5a!2sNova+College!5e0!3m2!1snl!2snl!4v1561284254793!5m2!1snl!2snl" width="720px" height="378px" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<div style="border:1px solid black;">
+				<p>
+					<div style="text-align: center">
+						Contactgegevens<br/>
+					<br/>
+						&nbsp Adres: Paxlaan 26, 2131 RZ Hoofddorp<br/>
+						&nbsp Telefoon: +31 612121212<br/>
+						&nbsp e-mail: Support@PC4u.nl<br/>
+						&nbsp Twitter: @PC4U<br/>
+						&nbsp Facebook: PC4U
+					</div>
+				</p>
+			</div>
+		</div>
+	<hr style="padding-bottom:692px; visibility:hidden;" />
     <!-- end of main body -->
     <!-- footer -->
     <footer class="bg-dark text-light">
         <div>
 			<br>
 			<br>
-            <p class="text-center">©<script>document.write(new Date().getFullYear());</script>- PC4U</p>
+            <p class="text-center">©<script>document.write(new Date().getFullYear());</script> - PC4U</p>
 			<br>
         </div>
 	</footer>
 	<!-- end of footer -->
 	
 	<!-- Javascript -->
-		<script src="Scripts/jquery-3.3.1.slim.min.js"></script>
-		<script src="PIU/Scripts/popper.min.js"></script>
-		<script src="PIU/Scripts/bootstrap.js"></script>
-		<script>
-		Gebruikersnaam = sessionStorage.getItem("Username");
-		if (Gebruikersnaam) {
-			document.getElementById("User").innerHTML = Gebruikersnaam;
-			document.getElementById("Logtext").innerText = "Log out";
-		}
-		else {
-			document.getElementById("User").innerHTML = "No one";
-			document.getElementById("Logtext").innerText = "Log in";
-		}
-
-		function Log() {
-			if (Gebruikersnaam){
-				sessionStorage.clear("Username");
-				location.reload();
-			}
-			else{
-				location.href = 'Accountsysteem/SQLlogin';
-			}
-		}
-		</script>
-	<!-- end of javascript -->
+	<script src="Scripts/jquery-3.3.1.slim.min.js"></script>
+	<script src="Scripts/popper.min.js"></script>
+	<script src="Scripts/bootstrap.js"></script>
+	<script src="Scripts/Inlogsysteem.js"></script>
+<!-- end of javascript -->
 </body></html>
