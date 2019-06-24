@@ -7,6 +7,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<link rel="stylesheet" href="Scripts/bootstrap.css" type="text/css">
 		<link rel="stylesheet" href="Scripts/Custom.css" type="text/css">
+		<link rel="stylesheet" href="Scripts/Custom2.css" type="text/css">
 		<link rel="icon" href="Scripts/img/Websites4U.png">
     </head>
     <!-- end of header -->
@@ -45,7 +46,7 @@
             </a>
             <div class="dropdown-menu dropdown-menu-right">
 				<a class="dropdown-item" href="#">Accountinfo</a>
-                <a class="dropdown-item" href="#">Shopping cart</a>
+                <button class="dropdown-item" href="" onclick="showCart()" data-toggle="modal" data-target="#exampleModal">Shopping cart</button>
                 <div class="dropdown-divider"></div>
                 <a style="cursor: pointer;" class="dropdown-item" id="Logtext" onclick="Log()"></a>
             </div>
@@ -54,53 +55,54 @@
 	<!-- end of navigation bar -->
 		<!-- main body -->
 		<br/>
-		<div style="width: 70%; position: absolute; left: 13%">
-			<div style="width:50%; text-align:center">
-			<h1>Heeft u nog vragen? , die kunnen hier worden gesteld.</h1>
-				Velden met <i id="">*</i> zijn benodigd<br/>
-			</div>
-			<div style="width:25%; position: relative; float:left;">
-				<input type="email" class="form-control" name="email" aria-describedby="email_input" placeholder="Enter email*">
-			</div>
-			<div style="width:25%; position: relative; float:left;">
-				<input type="text" class="form-control" name="Subject" aria-describedby="Subject_input" placeholder="Enter subject*">
-			</div>
-			<div style="clear:left; position: relative; top: 10px;">
-				<div style="width:25%; float:left;">
-					<input type="text" class="form-control" name="Name" aria-describedby="Name_input" placeholder="Enter Name">
+		<div class="center">
+			<div class="form">
+				<div class="top_form">
+				<h1>Heeft u nog vragen?</h1>
+					Velden met <i id="">*</i> zijn verplicht<br/>
 				</div>
-				<div style="width:25%; float:left;">
-					<input type="text" class="form-control" name="Adress" aria-describedby="Adress_input" placeholder="Enter Adress">
+				<div class="text_width">
+					<input type="email" class="form-control" name="email" aria-describedby="email_input" placeholder="Enter email*">
 				</div>
-			</div>
-			<div style="clear:left; position: relative; top: 20px;">
-				<div style="width:50%; float:left;">
-					<textarea class="form-control" style="min-width: 100%" name="Text: " rows="15" cols="80" width="90%" 
-                      placeholder="Beschrijving van uw vraag"></textarea> 
+				<div class="text_width">
+					<input type="text" class="form-control" name="Subject" aria-describedby="Subject_input" placeholder="Enter subject*">
 				</div>
-			</div>
-			<div style="clear:left; left: 21%; position: relative; top: 30px;">
-				<button type="submit" class="btn btn-primary">Stel uw vraag</button>
-			</div>
-			
-		</div>
-		<div style="position:absolute; height: 585px; left:52%; top: 12%;">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2900.9700381628486!2d4.683562965966605!3d52.30846605035255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5e7b3ae6a7cbb%3A0xda10ab140627e5a!2sNova+College!5e0!3m2!1snl!2snl!4v1561284254793!5m2!1snl!2snl" width="720px" height="378px" frameborder="0" style="border:0" allowfullscreen></iframe>
-			<div style="border:1px solid black;">
-				<p>
-					<div style="text-align: center">
-						Contactgegevens<br/>
-					<br/>
-						&nbsp Adres: Paxlaan 26, 2131 RZ Hoofddorp<br/>
-						&nbsp Telefoon: +31 612121212<br/>
-						&nbsp e-mail: Support@PC4u.nl<br/>
-						&nbsp Twitter: @PC4U<br/>
-						&nbsp Facebook: PC4U
+				<div style="clear:left; position: relative; top: 10px;">
+					<div class="text_width">
+						<input type="text" class="form-control" name="Name" aria-describedby="Name_input" placeholder="Enter Name">
 					</div>
-				</p>
+					<div class="text_width">
+						<input type="text" class="form-control" name="Adress" aria-describedby="Adress_input" placeholder="Enter Adress">
+					</div>
+				</div>
+				<div style="clear:left; position: relative; top: 20px;">
+					<div class="form_question">
+						<textarea class="form-control" style="min-width: 100%" name="Text: " rows="15" cols="80" width="90%" 
+						placeholder="Beschrijving van uw vraag"></textarea> 
+					</div>
+				</div>
+				<div style="clear:left; left: 21%; position: relative; top: 30px;">
+					<button type="submit" class="btn btn-primary">Stel uw vraag</button>
+				</div>
 			</div>
 		</div>
-	<hr style="padding-bottom:692px; visibility:hidden;" />
+			<div class="responsivecontact">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2900.9700381628486!2d4.683562965966605!3d52.30846605035255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5e7b3ae6a7cbb%3A0xda10ab140627e5a!2sNova+College!5e0!3m2!1snl!2snl!4v1561284254793!5m2!1snl!2snl" width="720px" height="378px" frameborder="0" style="border:0" allowfullscreen></iframe>
+				<div style="border:1px solid black;">
+					<p>
+						<div style="text-align: center">
+							Contactgegevens<br/>
+						<br/>
+							&nbsp Adres: Paxlaan 26, 2131 RZ Hoofddorp<br/>
+							&nbsp Telefoon: +31 612121212<br/>
+							&nbsp e-mail: Support@PC4u.nl<br/>
+							&nbsp Twitter: @PC4U<br/>
+							&nbsp Facebook: PC4U
+						</div>
+					</p>
+				</div>
+			</div>
+	<hr class="under" />
     <!-- end of main body -->
     <!-- footer -->
     <footer class="bg-dark text-light">
@@ -112,8 +114,8 @@
         </div>
 	</footer>
 	<!-- end of footer -->
-	
 	<!-- Javascript -->
+	<script src="Scripts/shoppingCart.js"></script>
 	<script src="Scripts/jquery-3.3.1.slim.min.js"></script>
 	<script src="Scripts/popper.min.js"></script>
 	<script src="Scripts/bootstrap.js"></script>

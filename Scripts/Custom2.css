@@ -1,0 +1,75 @@
+@media (min-width: 900px)
+{
+  .responsivecontact {
+    position: absolute; height: 585px; left:52%; top: 12%;
+  }
+  .under
+  {
+    padding-bottom:692px; visibility:hidden;
+  }
+  .form
+  {
+    width: 70%; position: absolute; left: 13%
+  }
+  .text_width
+  {
+    width:25%; float:left;
+  }
+  .form_text
+  {
+    width:50%; text-align:center;
+  }
+  .form_question
+  {
+    width:50%; float:left;
+  }
+  .top_form
+  {
+    width:50%; text-align:center;
+  }
+  .button
+  {
+    clear:left; left: 21%; position: relative; top: 30px;
+  }
+}
+@media (max-width: 899px)
+{
+  .responsivecontact {
+    position: absolute; 
+    align-self: center;
+    top: 840px;
+    width: 100%;
+  }
+  .under
+  {
+    padding-bottom: 1290px; visibility:hidden;
+  }
+  .form
+  {
+    width: 400px; position: absolute;
+  }
+  .text_width
+  {
+    width:50%; float:left;
+  }
+  .form_text
+  {
+    width:50%; text-align:center;
+  }
+  .form_question
+  {
+    width:100%; float:left;
+  }
+  .center
+  {
+    position: absolute; left: 180px;
+  }
+  .top_form
+  {
+    width:50%; position: relative; left: 25%; text-align: center;
+  }
+  .button
+  {
+    left: 10%; position: absolute; top: 30px;
+  }
+}
