@@ -10,54 +10,69 @@
     </head>
     <!-- end of header -->
     <body>  
-        <!-- Navigation bar -->    
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
-            <a class="navbar-brand" href="Home.html">
-                <img src="Scripts/img/Websites4U.webp" class="navlogo" width="50" height="50">          
-            </a>
-            <a class="navbar-brand" href="#">
-                <h5 class="d-md-none">Computers</h5>        
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="home.html">Home<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Computers<span class="sr-only"></span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="reparatiepagina.html">Reparatie</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Contact_page.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <!-- end of navigation bar -->
-        <!-- main body -->
-        <div class="container p-0 col-12 pt-3">
-            
+    <!-- Navigation bar -->    
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+        <a class="navbar-brand" href="Home.html">
+          <img src="Scripts/img/Websites4U.webp" class="navlogo" width="50" height="50">          
+        </a>
+        <a class="navbar-brand" href="Home.html">
+          <h5 class="d-md-none">Computers</h5>        
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Computers<span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="reparatiepagina.html">Reparatie</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Contact_page.html">Contact</a>
+            </li>
+          </ul>
         </div>
-        <!-- end of main body -->
-        <!-- footer -->
-        <footer class="bg-dark text-light mt-3">
-            <div>
-                <br/>
-                <br/>
-                <p class="text-center">&copy;<script>document.write(new Date().getFullYear());</script> - PC4U</p></p>
-                <br/>
-            </div>
-        </footer>
-        <!-- end of footer -->
-        <!-- Javascript -->
-        <script src="Scripts/jquery-3.3.1.slim.min.js"></script>
-        <script src="Scripts/popper.min.js"></script>
-        <script src="Scripts/bootstrap.js"></script>
-        <!-- end of javascript -->
+        <div class="dropdown show">
+          <b style="color:white">Ingelogd als:&nbsp</b>
+          <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i id="User"></i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right">
+            <a class="dropdown-item" href="#">Accountinfo</a>
+            <button class="dropdown-item" href="" onclick="showCart()" data-toggle="modal" data-target="#exampleModal">Shopping cart</button>
+              <div class="dropdown-divider"></div>
+            <a style="cursor: pointer;" class="dropdown-item" id="Logtext" onclick="Log()"></a>
+          </div>
+        </div>
+      </nav>
+      <!-- end of navigation bar -->
+      <!-- main body -->
+      <div class="container p-0 col-12 pt-3">        
+        
+      </div>
+           
+      <!-- end of main body -->
+      <!-- footer -->
+      <footer class="bg-dark text-light mt-3">
+        <div>
+          <br/>
+          <br/>
+            <p class="text-center">&copy;<script>document.write(new Date().getFullYear());</script> - PC4U</p></p>
+          <br/>
+        </div>
+      </footer>
+      <!-- end of footer -->
+      <!-- Javascript -->
+      <script src="Scripts/Inlogsysteem.js"></script>
+      <script src="Scripts/jquery-3.3.1.slim.min.js"></script>
+      <script src="Scripts/popper.min.js"></script>
+      <script src="Scripts/bootstrap.js"></script>
+      <!-- end of javascript -->
     </body>
+
 </html>
