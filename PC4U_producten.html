@@ -11,12 +11,12 @@
     <!-- end of header -->
     <body>  
     <!-- Navigation bar -->    
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
         <a class="navbar-brand" href="Home.html">
           <img src="Scripts/img/Websites4U.webp" class="navlogo" width="50" height="50">          
         </a>
         <a class="navbar-brand" href="Home.html">
-          <h5 class="d-lg-none">Computers</h5>        
+          <h5 class="d-md-none">Computers</h5>        
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -37,6 +37,18 @@
             </li>
           </ul>
         </div>
+        <div class="dropdown show">
+          <b style="color:white">Ingelogd als:&nbsp</b>
+          <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i id="User"></i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right">
+            <a class="dropdown-item" href="#">Accountinfo</a>
+            <button class="dropdown-item" href="" onclick="showCart()" data-toggle="modal" data-target="#exampleModal">Shopping cart</button>
+              <div class="dropdown-divider"></div>
+            <a style="cursor: pointer;" class="dropdown-item" id="Logtext" onclick="Log()"></a>
+          </div>
+        </div>
       </nav>
       <!-- end of navigation bar -->
       <!-- main body -->
@@ -44,103 +56,132 @@
         <div class="row justify-content-center m-0">
           <div class="card col-12 col-md-3 my-3 mx-4 mx-md-4 mx-xl-5 rounded-0">            
               <div class="card-body px-0 py-3">
-                <h5 class="card-title mx-2 mx-md-0">Asus Chromebook C523NA-EJ0054</h5>
+                <h5 class="card-title mx-2 mx-md-0" id="pc1">Asus Chromebook C523NA-EJ0054</h5>
                 <img src="Scripts/img/pc1.webp" class="card-img-top pb-1" alt="Asus Chromebook C523NA-EJ0054">
                 <p class="card-text h6 font-weight-normal mx-2 mx-md-0">Deze Chromebook is geschikt voor het kijken van films en series in full HD, door de beperkte opslagruimte word cloud opslag aangeraden</p>
                 <div class="text-center">
                   <a class="btn btn-success col-11 mx-auto" href="producten/PC1.html">Naar product pagina</a>
+                  <button type="button" name="order" onclick="pc1()" class="btn btn-primary col-11 mx-auto mt-2">Aan winkelmandje toevoegen</button>
                 </div>
               </div>
           </div>
 
           <div class="card col-12 col-md-3 my-3 mx-4 mx-md-4 mx-xl-5 rounded-0">            
               <div class="card-body px-0 py-3">
-                <h5 class="card-title mx-2 mx-md-0">HP Elitebook 2560p</h5>
+                <h5 class="card-title mx-2 mx-md-0" id="pc2">HP Elitebook 2560p</h5>
                 <img src="Scripts/img/pc2.webp" class="card-img-top pb-1" alt="HP Elitebook 2560p">
                 <p class="card-text h6 font-weight-normal mx-2 mx-md-0">Door het 12.5 inch beeldscherm is deze HP erg handzaam en door de metalen behuizing heel erg stevig. Verder voorzien van alles wat belangrijk is zoals een displayport, fingerprintreader en een webcam.</p>
                 <div class="text-center">
                   <a class="btn btn-success col-11 mx-auto" href="producten/PC2.html">Naar product pagina</a>
+                  <button type="button" name="order" onclick="pc2()" class="btn btn-primary col-11 mx-auto mt-2">Aan winkelmandje toevoegen</button>
                 </div>
               </div>
           </div>
           
           <div class="card col-12 col-md-3 my-3 mx-4 mx-md-4 mx-xl-5 rounded-0">            
               <div class="card-body px-0 py-3">
-                <h5 class="card-title mx-2 mx-md-0">Acer Aspire TC-885 I5518</h5>
+                <h5 class="card-title mx-2 mx-md-0" id="pc3">Acer Aspire TC-885 I5518</h5>
                 <img src="Scripts/img/pc3.webp" class="card-img-top pb-1" alt="Acer Aspire TC-885 I5518">
                 <p class="card-text h6 font-weight-normal mx-2 mx-md-0">Deze desktop start binnen 15 seconden op door de 128 gb SSD, en is geschikt voor verslagen voor school, het sturen van mailtjes en het bewerken van fotos. Ook is er genoeg opslag door de 1 TB hardeschijf.</p>
                 <div class="text-center">
                   <a class="btn btn-success col-11 mx-auto" href="producten/PC3.html">Naar product pagina</a>
+                  <button type="button" name="order" onclick="pc3()" class="btn btn-primary col-11 mx-auto mt-2">Aan winkelmandje toevoegen</button>
                 </div>
               </div>
           </div>
 
           <div class="card col-12 col-md-3 my-3 mx-4 mx-md-4 mx-xl-5 rounded-0">            
               <div class="card-body px-0 py-3">
-                <h5 class="card-title mx-2 mx-md-0">Acer A114-32-C0P1</h5>
+                <h5 class="card-title mx-2 mx-md-0" id="pc4">Acer A114-32-C0P1</h5>
                 <img src="Scripts/img/pc4.webp" class="card-img-top pb-1" alt="Acer A114-32-C0P1">
                 <p class="card-text h6 font-weight-normal mx-2 mx-md-0">De Acer Aspire 1 A114-32-C4HP is een compacte 14 inch laptop die je eenvoudig met je meeneemt. Met deze laptop ga je snel aan de slag met je school- of werkactiviteiten.</p>
                 <div class="text-center">
                   <a class="btn btn-success col-11 mx-auto" href="producten/PC4.html">Naar product pagina</a>
+                  <button type="button" name="order" onclick="pc4()" class="btn btn-primary col-11 mx-auto mt-2">Aan winkelmandje toevoegen</button>
                 </div>
               </div>
           </div>
 
           <div class="card col-12 col-md-3 my-3 mx-4 mx-md-4 mx-xl-5 rounded-0">            
               <div class="card-body px-0 py-3">
-                <h5 class="card-title mx-2 mx-md-0">Lenovo C330 81HY0005MH</h5>
+                <h5 class="card-title mx-2 mx-md-0" id="pc5">Lenovo C330 81HY0005MH</h5>
                 <img src="Scripts/img/pc5.webp" class="card-img-top pb-1" alt="Lenovo C330 81HY0005MH">
                 <p class="card-text h6 font-weight-normal mx-2 mx-md-0">Deze laptop is makkelijk voor onderweg door het lage gewicht en een batterijduur van 8 uur. Hij is geschikt voor internetten, tekstverwerking en het versturen van emails.</p>
                 <div class="text-center">
                   <a class="btn btn-success col-11 mx-auto" href="producten/PC5.html">Naar product pagina</a>
+                  <button type="button" name="order" onclick="pc5()" class="btn btn-primary col-11 mx-auto mt-2">Aan winkelmandje toevoegen</button>
                 </div>
               </div>
           </div>
           
           <div class="card col-12 col-md-3 my-3 mx-4 mx-md-4 mx-xl-5 rounded-0">            
               <div class="card-body px-0 py-3">
-                <h5 class="card-title mx-2 mx-md-0">Acer Aspire XC-830 I1404</h5>
+                <h5 class="card-title mx-2 mx-md-0" id="pc6">Acer Aspire XC-830 I1404</h5>
                 <img src="Scripts/img/pc6.webp" class="card-img-top pb-1" alt="Acer Aspire XC-830 I1404">
                 <p class="card-text h6 font-weight-normal mx-2 mx-md-0">Deze desktop beschikt over een 1 TB hardeschijf, waardoor je een hoop bestanden op kan slaan. Ook is de desktop niet groter als een A4'tje, waardoor hij makkelijker op je bureau past.</p>
                 <div class="text-center">
                   <a class="btn btn-success col-11 mx-auto" href="producten/PC6.html">Naar product pagina</a>
+                  <button type="button" name="order" onclick="pc6()" class="btn btn-primary col-11 mx-auto mt-2">Aan winkelmandje toevoegen</button>
                 </div>
               </div>
           </div>
 
           <div class="card col-12 col-md-3 my-3 mx-4 mx-md-4 mx-xl-5 rounded-0">            
               <div class="card-body px-0 py-3">
-                <h5 class="card-title mx-2 mx-md-0">Lenovo IdeaCentre 310S-08IGM 90HX001WMH</h5>
+                <h5 class="card-title mx-2 mx-md-0" id="pc7">Lenovo IdeaCentre 310S-08IGM 90HX001WMH</h5>
                 <img src="Scripts/img/pc7.webp" class="card-img-top pb-1" alt="Lenovo IdeaCentre 310S-08IGM 90HX001WMH">
                 <p class="card-text h6 font-weight-normal mx-2 mx-md-0">De Ideacenter van Lenovo is geschikt voor het kijken van films, maar ook voor het downloaden van films en voor de boekhouding. hij heeft een vlinke opslag capaciteit door de 1 TB hardeschijf.</p>
                 <div class="text-center">
                   <a class="btn btn-success col-11 mx-auto" href="producten/PC7.html">Naar product pagina</a>
+                  <button type="button" name="order" onclick="pc7()" class="btn btn-primary col-11 mx-auto mt-2">Aan winkelmandje toevoegen</button>
                 </div>
               </div>
           </div>
 
           <div class="card col-12 col-md-3 my-3 mx-4 mx-md-4 mx-xl-5 rounded-0">            
               <div class="card-body px-0 py-3">
-                <h5 class="card-title mx-2 mx-md-0">HP 290-a0100nd</h5>
+                <h5 class="card-title mx-2 mx-md-0" id="pc8">HP 290-a0100nd</h5>
                 <img src="Scripts/img/pc8.webp" class="card-img-top pb-1" alt="HP 290-a0100nd">
                 <p class="card-text h6 font-weight-normal mx-2 mx-md-0">Deze desktop is geschikt voor een hoop verschillende taken, bijvoorbeeld voor het kijken of downloaden van films, het doen van de boekhouding of voor het versturen van emailtjes. Ook heeft de gebruiker plaats voor 2 schermen, vanwege de extra monitor poort.</p>
                 <div class="text-center">
                   <a class="btn btn-success col-11 mx-auto" href="producten/PC8.html">Naar product pagina</a>
+                  <button type="button" name="order" onclick="pc8()" class="btn btn-primary col-11 mx-auto mt-2">Aan winkelmandje toevoegen</button>
                 </div>
               </div>
           </div>
           
           <div class="card col-12 col-md-3 my-3 mx-4 mx-md-4 mx-xl-5 rounded-0">            
               <div class="card-body px-0 py-3">
-                <h5 class="card-title mx-2 mx-md-0">Asus VivoBook Flip TP401MA-EC019TS</h5>
+                <h5 class="card-title mx-2 mx-md-0" id="pc9">Asus VivoBook Flip TP401MA-EC019TS</h5>
                 <img src="Scripts/img/pc9.webp" class="card-img-top pb-1" alt="Asus VivoBook Flip TP401MA-EC019TS">
                 <p class="card-text h6 font-weight-normal mx-2 mx-md-0">Deze laptop is handig voor iemand die veel reist, omdat hij klein genoeg is om mee te nemen. Hij is voorzien van 4 GB werkgeheugen, en heeft niet super veel opslagruimte, waardoor cloud opslag een aanrader is.</p>
                 <div class="text-center">
                   <a class="btn btn-success col-11 mx-auto" href="producten/PC9.html">Naar product pagina</a>
+                  <button type="button" name="order" onclick="pc9()" class="btn btn-primary col-11 mx-auto mt-2">Aan winkelmandje toevoegen</button>
                 </div>
               </div>
           </div>
 
+        </div>
+      </div>
+
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p id="ShowCart"></p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Sluiten</button>
+              <button type="button" class="btn btn-primary">Bestellen</button>
+            </div>
+          </div>
         </div>
       </div>
            
@@ -156,6 +197,8 @@
       </footer>
       <!-- end of footer -->
       <!-- Javascript -->
+      <script src="Scripts/shoppingCart.js"></script>
+      <script src="Scripts/Inlogsysteem.js"></script>
       <script src="Scripts/jquery-3.3.1.slim.min.js"></script>
       <script src="Scripts/popper.min.js"></script>
       <script src="Scripts/bootstrap.js"></script>

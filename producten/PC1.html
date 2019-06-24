@@ -37,6 +37,18 @@
             </li>
           </ul>
         </div>
+        <div class="dropdown show">
+          <b style="color:white">Ingelogd als:&nbsp</b>
+          <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i id="User"></i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right">
+            <a class="dropdown-item" href="#">Accountinfo</a>
+            <!--<a class="dropdown-item" href="#">Shopping cart</a>--> <!--Niet meer nodig aangezien de shopping cart alleen op de producten pagina werkt-->
+              <div class="dropdown-divider"></div>
+            <a style="cursor: pointer;" class="dropdown-item" id="Logtext" onclick="Log()"></a>
+          </div>
+        </div>
       </nav>
       <!-- end of navigation bar -->
       <!-- main body -->
@@ -45,7 +57,7 @@
         <div class="container-fluid">
           <div class="row">
               <div class="col-12">
-                  <h1 class="ml-3">Asus Chromebook C523NA-EJ0054</h1>
+                  <h1 class="ml-3" id="item">Asus Chromebook C523NA-EJ0054</h1>
                   <hr class="mx-3">
               </div>
               <br/>
@@ -139,7 +151,7 @@
               </div>
           </div>
           <br/> 
-          </div>                
+          </div> 
           <!-- end of main body -->
       <!-- footer -->
       <footer class="bg-dark text-light mt-3">
@@ -152,6 +164,7 @@
     </footer>
     <!-- end of footer -->
     <!-- Javascript -->
+    <script src="../Scripts/Inlogsysteem.js"></script> 
     <script src="../Scripts/jquery-3.3.1.slim.min.js"></script>
     <script src="../Scripts/popper.min.js"></script>
     <script src="../Scripts/bootstrap.js"></script>
