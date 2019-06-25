@@ -25,7 +25,6 @@
     }
     
   }
-  exit;
 ?>
 
 <!DOCTYPE html>
