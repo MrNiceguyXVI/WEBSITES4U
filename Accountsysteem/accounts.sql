@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Gegenereerd op: 25 jun 2019 om 15:27
+-- Gegenereerd op: 25 jun 2019 om 15:46
 -- Serverversie: 10.1.40-MariaDB
 -- PHP-versie: 7.3.5
 
@@ -40,7 +40,8 @@ CREATE TABLE `gebruikersgegevens` (
 
 INSERT INTO `gebruikersgegevens` (`Gebruikersnaam`, `Wachtwoord`, `Admin`) VALUES
 ('Zach', '789', 'NO'),
-('Gert', 'Gert24', 'YES');
+('Gert', 'Gert24', 'YES'),
+('opa', '1', 'NO');
 
 -- --------------------------------------------------------
 
