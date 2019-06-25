@@ -14,17 +14,18 @@
     $description = $_POST['description'];
     $specs = $_POST['specifications'];
 
-
     $sql = "INSERT INTO producten (title, image, description, specs) VALUES ('$title', '$image', '$description', '$specs')";
     mysqli_query($db, $sql); //slaat de gestuurde gevens op in de 'producten' tabel in de database
-
+    
     //verplaatst de gestuurde afbeelding naar de 'product_img' map in img
     if(move_uploaded_file($_FILES['image']['tmp_name'], $target)){
       $msg = "image uploaded successfully!";
     }else{
         $msg = "there was a problem uploadng the image";
     }
+    
   }
+  exit;
 ?>
 
 <!DOCTYPE html>
