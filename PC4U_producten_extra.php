@@ -213,7 +213,7 @@
            
       <!-- end of main body -->
       <!-- footer -->
-      <footer class="bg-dark text-light mt-3 fixed-bottom">
+      <footer class="bg-dark text-light mt-3">
         <div>
           <br/>
           <br/>
