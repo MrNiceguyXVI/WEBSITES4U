@@ -14,6 +14,7 @@
     $description = $_POST['description'];
     $specs = $_POST['specifications'];
 
+
     $sql = "INSERT INTO producten (title, image, description, specs) VALUES ('$title', '$image', '$description', '$specs')";
     mysqli_query($db, $sql); //slaat de gestuurde gevens op in de 'producten' tabel in de database
 
@@ -23,7 +24,6 @@
     }else{
         $msg = "there was a problem uploadng the image";
     }
-    
   }
 ?>
 
@@ -35,7 +35,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="Scripts/bootstrap.css" type="text/css">
-        <link rel="icon" href="Scripts/img/Websites4U.png">
+        <link rel="icon" href="Scripts/img/Websites4U.webp">
     </head>
     <!-- end of header -->
     <body>  
@@ -80,17 +80,17 @@
       </nav>
       <!-- end of navigation bar -->
       <!-- main body -->
-
       <!--START knoppen voor modals product toevoegen en verwijderen-->
-      <div class="container p-0 col-12 pt-3">      
+      <div class="container p-0 col-12 pt-3">    
+      <div id="Admindiv" style="display:none;">  
         <div class="row m-0">  
           <div class="ml-md-auto pr-md-5 pr-lg-4 text-center">          
             <button type="button" class="btn btn-dark mb-1 mb-md-0" data-toggle="modal" data-target="#Pform">Producten toevoegen</button>
             <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#Delform">Producten verwijderen</button>
           </div>
         </div>
+      </div>
       <!--EIND knoppen voor modals product toevoegen en verwijderen-->
-
         <!--START Product toevoegen modal-->
         <div class="modal fade" id="Pform" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog" role="document">
@@ -208,9 +208,7 @@
           ?>
         </div>
         <!--EIND Php code die producten uit de sql database toevoegd-->
-        
       </div>
-           
       <!-- end of main body -->
       <!-- footer -->
       <footer class="bg-dark text-light mt-3">
@@ -227,6 +225,13 @@
       <script src="Scripts/jquery-3.3.1.slim.min.js"></script>
       <script src="Scripts/popper.min.js"></script>
       <script src="Scripts/bootstrap.js"></script>
+      <script>
+        var Admin = sessionStorage.getItem("Admin");
+        if (Admin == "YES")
+        {
+          document.getElementById("Admindiv").style.display = "block";
+        }
+      </script>
       <!-- end of javascript -->
     </body>
 

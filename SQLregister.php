@@ -3,8 +3,8 @@ $Gebruikersnaam = $_POST['Username'];
 $Wachtwoord = $_POST['Password'];
 
 $servername = "localhost";
-$username = "Gert";
-$password = "ZImZDvgpX5SOw8Oi";
+$username = "root";
+$password = "";
 $dbname = "accounts";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -33,7 +33,7 @@ else{
 		else
 		{
 			$sql = "INSERT INTO gebruikersgegevens (Gebruikersnaam, Wachtwoord, Admin)
-			VALUES ('$Gebruikersnaam', '$Wachtwoord', 'No')";
+			VALUES ('$Gebruikersnaam', '$Wachtwoord', 'NO')";
 				mysqli_query($conn, $sql);
 				echo "<h2 align='center'>Your account has now been created</h2>";
 				echo "<script>
